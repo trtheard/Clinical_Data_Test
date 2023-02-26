@@ -1,0 +1,121 @@
+Final Destination: a new location in Harvey (1629 Westbank Expressway Harvey, LA 70058)
+Patient Focus: Medicare and potentially offer healthcare services to the Medicare population in that ZIP code
+
+
+## Provider Assigned Sites
+# Will need at least one provider who is "Pediatric" or "Both"
+# Need at least 3 medical providers in one location
+
+############################################################################
+## Provider Demand
+# Higher FTEs (at least 1.0) reach closer to 35,000 visits from patients
+
+
+## Location_Details
+# Majority of the locations are in New Orleans
+# Cities = New Orleans, Gretna, Kenner, Metairie
+
+
+#####################################################
+## Currently where providers are stationed
+
+Okay Exchange:
+	70065 <-> 70003
+	70118 <-> 70115
+	70115 <-> 70112
+	70115 <-> 70114
+	70112 <-> 70114
+	70112 <-> 70117
+	70117 <-> 70126
+	70117 <-> 70127
+	70126 <-> 70127
+	70056 <-> 70114
+	70058 <-> 70056
+	70058 <-> 70114
+	70002 <-> 70003
+	70001 <-> 70002
+	70001 <-> 70003
+	70001 <-> 70118
+	70001 <-> 70115
+
+
+Take from:
+  1. Carrollton (16A, 3P, 1B)  		70118
+  2. Gentilly (7A, 1P, 3B)		70112
+  3. Gretna (1A, 1P, 2B)(only 1)	70056
+  4. Kenner (2A, 2P, 1B)(Only 2)	70065
+  5. Lakeside (4P, 1B)(Only 1)		70002
+
+Add to:
+  1. Algiers (2P)			70114
+  2. Prytania (2P)			70115
+  3. St. Stephen (1B) -- School		70115
+  4. St. Therese (1B) -- School		70003
+
+Exact Amount:
+  1. Higgins (1P, 2B)			70126
+
+
+Pediatric Move:
+	St. Stephen (1B, 2A) <- Carrollton(17)			70115 <- 70118
+	St. Therese (2B, 1P) <- Kenner(3)			70003 <- 70065
+	
+
+Adult Move:
+	Algiers (2 Adult, 1 Both) <- Gentilly(8)		70114 <- 70112
+	Prytania (2 Pediatric, 1 Adult) <- Gentilly(7)		70115 <- 70112
+	
+	
+
+Both Move:
+
+
+
+Final Dest.:
+	Harvey (1B) <- Gretna (3)			70058 <- 70056
+	Harvey (2P, 1B) <- Algier(0) 			70058 <- 70114
+		-Before taking from Gentilly
+
+
+############
+Other Sites:
+  1. NO East (7A, 2P)		70127
+  2. St. Cecilia (5A, 1B)  	70117
+  3. Metairie (4A)(Only 1) 	70001
+
+
+School:
+  1. McDonogh 35 High School (2P, 1B) 		70112
+  2. Edna Karr High School (1P, 1B)		
+  3. St. Mary's Academy(1P, 1B)
+  4. Homer Plessy Treme (1B)
+  5. L. B. Landry High School (1P)
+  6. Our Lady of Perpetual Help (1B)
+  7. Pierre Capdau (1B)
+  8. St. Augustine High School (1B)
+  9. St. Joan of Arc (1B)
+  10. St. Leo the Great(1B)
+  11. Alice Harte and Hariett Tubman Blue School(1P)
+
+Floater:
+  1. Telehealth (1A)
+
+
+###
+New Counts
+  ** Harvey(2P, 1B)
+  1. Carrollton (13A, 1P, 1B)
+  2. Gentilly (4A, 1P, 2B)
+  3. Gretna (1A, 1P, 1B)
+  4. Kenner (2A, 1P, 1B)
+  5. Lakeside (4P, 1B)
+  6. NO East (7A, 2P)
+  7. St. Cecilia (5A, 1B)  
+  8. Metarie (4A)
+  9. Higgins (1P, 2B)
+  10. Algiers (2A, 1B)
+  11. Prytania (1A, 2P)
+  12. St. Stephen (1A, 1P, 1B) 
+  13. St. Therese (1P, 2B)
+
+

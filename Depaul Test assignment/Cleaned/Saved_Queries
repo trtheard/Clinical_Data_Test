@@ -1,0 +1,35 @@
+## Query for new talble
+
+#Description: 
+# This table focuses on the medical providers at each site.
+# It shows the site they are currently stationed at, medical practice, total providers with that practice.
+###
+CREATE TABLE  `depaul-assignment.Assigned_providers.Original_provider_per_site_count` AS (
+  SELECT Site, Adult_Ped, COUNT(Adult_Ped) AS Total_Providers 
+  FROM `depaul-assignment.Assigned_providers.Providers` 
+  GROUP BY Adult_Ped, Site 
+  ORDER BY Site
+);
+
+
+#Description: 
+# This table connects the providers to the assigned sites.
+# It shows detailed information for the provider and the amount of visitors the site recieves.
+###
+CREATE TABLE `depaul-assignment.Assigned_providers.Provider_Demand` AS(
+  SELECT Provider_Names, Job_Classification, Site, Adult_Ped, FTE, Volume_of_Visits  
+  FROM `depaul-assignment.Assigned_providers.Providers` p, `depaul-assignment.Assigned_providers.DCHC_Locations` l
+  WHERE p.Site = l.Nickname
+);
+
+
+#Description: 
+# This table focuses on the medicare patients
+# It shows details about each site and the medicare patients they see often
+###
+CREATE TABLE `depaul-assignment.Assigned_providers.Medicare_in_Range` AS(
+  SELECT DISTINCT Health_Center_Name, Nickname, City, ZIP_Code, Volume_of_Visits, MEDICARE_D
+  FROM `depaul-assignment.Assigned_providers.DCHC_Locations` l, `depaul-assignment.Assigned_providers.Patients_by_Zip_Code` p
+  WHERE CAST(l.ZIP_Code AS STRING) = p.ZIP_CODE_A
+  ORDER BY Health_Center_Name
+);
